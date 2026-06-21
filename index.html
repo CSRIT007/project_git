@@ -3,54 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Ubuntu Commands</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      padding: 30px;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-    }
-
-    h2 {
-      color: #e95420;
-    }
-
-    h3 {
-      color: #333;
-      border-bottom: 2px solid #e95420;
-      padding-bottom: 5px;
-    }
-
-    code {
-      background: #222;
-      color: #00ff99;
-      padding: 3px 6px;
-      border-radius: 4px;
-    }
-
-    pre {
-      background: #222;
-      color: #00ff99;
-      padding: 15px;
-      border-radius: 8px;
-      overflow-x: auto;
-    }
-
-    .note {
-      background: #fff3cd;
-      padding: 12px;
-      border-left: 5px solid #ffc107;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -62,7 +15,9 @@
       Ubuntu commands are used in the terminal to manage files, folders,
       software, users, network, and system services.
     </p>
-<hr>
+
+    <hr>
+
     <h2>1. Check Current Folder</h2>
     <p>This command shows your current location in the terminal.</p>
     <pre>pwd</pre>
@@ -125,17 +80,17 @@
       Example: <code>sudo service ssh status</code>
     </div>
 
-        <div class="note">
+    <hr>
+
+    <h2>15. Check SSH Service Again</h2>
+    <p>This command helps you confirm SSH is running.</p>
+    <pre>sudo service ssh status</pre>
+
+    <div class="note">
       <strong>Note:</strong>
-      In Ubuntu, you should use <code>ssh</code> service name, not <code>sshd</code>.
-      Example: <code>sudo service ssh status</code>
+      If you use Ubuntu WSL, you can start SSH with
+      <code>sudo service ssh start</code>.
     </div>
-hr>
-    <h2>15. Check SSH Service</h2>
-     <div class="note">
-      <strong>Note:</strong>
-      In Ubuntu, you should use <code>ssh</code> service name, not <code>sshd</code>.
-      Example: <code>sudo service ssh status</code> 
   </div>
 
 </body>
