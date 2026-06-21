@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ubuntu Commands</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #e95420;
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #e95420;
+      padding-bottom: 5px;
+    }
+
+    code {
+      background: #222;
+      color: #00ff99;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+
+    pre {
+      background: #222;
+      color: #00ff99;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .note {
+      background: #fff3cd;
+      padding: 12px;
+      border-left: 5px solid #ffc107;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Ubuntu Basic Commands</h1>
+
+    <p>
+      This page explains basic Ubuntu commands for beginners.
+      Ubuntu commands are used in the terminal to manage files, folders,
+      software, users, network, and system services.
+    </p>
+
+    <h2>1. Check Current Folder</h2>
+    <p>This command shows your current location in the terminal.</p>
+    <pre>pwd</pre>
+
+    <h2>2. Show Files and Folders</h2>
+    <p>This command lists files and folders in the current directory.</p>
+    <pre>ls</pre>
+
+    <h2>3. Change Directory</h2>
+    <p>This command moves you into another folder.</p>
+    <pre>cd folder_name</pre>
+
+    <h2>4. Create New Folder</h2>
+    <p>This command creates a new folder.</p>
+    <pre>mkdir myfolder</pre>
+
+    <h2>5. Create New File</h2>
+    <p>This command creates an empty file.</p>
+    <pre>touch index.html</pre>
+
+    <h2>6. Edit File with Nano</h2>
+    <p>This command opens a file using the nano editor.</p>
+    <pre>nano index.html</pre>
+
+    <h2>7. Remove File</h2>
+    <p>This command deletes a file.</p>
+    <pre>rm index.html</pre>
+
+    <h2>8. Remove Folder</h2>
+    <p>This command deletes an empty folder.</p>
+    <pre>rmdir myfolder</pre>
+
+    <h2>9. Update Ubuntu Package List</h2>
+    <p>This command updates the software package list.</p>
+    <pre>sudo apt update</pre>
+
+    <h2>10. Install Software</h2>
+    <p>This command installs software in Ubuntu.</p>
+    <pre>sudo apt install package_name</pre>
+
+    <h2>11. Check IP Address</h2>
+    <p>This command shows your Ubuntu IP address.</p>
+    <pre>hostname -I</pre>
+
+    <h2>12. Check SSH Service</h2>
+    <p>This command checks SSH server status.</p>
+    <pre>sudo service ssh status</pre>
+
+    <h2>13. Start SSH Service</h2>
+    <p>This command starts SSH service.</p>
+    <pre>sudo service ssh start</pre>
+
+    <h2>14. Change Hostname</h2>
+    <p>This command changes your Ubuntu hostname.</p>
+    <pre>sudo hostnamectl set-hostname ubuntu</pre>
+
+    <div class="note">
+      <strong>Note:</strong>
+      In Ubuntu, you should use <code>ssh</code> service name, not <code>sshd</code>.
+      Example: <code>sudo service ssh status</code>
+    </div>
+  </div>
+
+</body>
+</html>
