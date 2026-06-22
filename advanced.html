@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ubuntu Commands - Advanced</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Ubuntu Commands</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="beginner.html">Beginner</a></li>
+      <li><a href="intermediate.html">Intermediate</a></li>
+      <li><a class="active" href="advanced.html">Advanced</a></li>
+    </ul>
+
+    <button id="themeToggle">Dark Mode</button>
+  </nav>
+
+  <main class="container">
+    <h1>Advanced Ubuntu Commands</h1>
+
+    <section class="command-box">
+      <h2>1. Show Running Processes</h2>
+      <p>Shows running processes.</p>
+      <pre>ps aux</pre>
+    </section>
+
+    <section class="command-box">
+      <h2>2. Kill Process</h2>
+      <p>Stops a process by process ID.</p>
+      <pre>kill PID</pre>
+    </section>
+
+    <section class="command-box">
+      <h2>3. Check Disk Usage</h2>
+      <p>Shows disk usage.</p>
+      <pre>df -h</pre>
+    </section>
+
+    <section class="command-box">
+      <h2>4. Check Memory Usage</h2>
+      <p>Shows memory usage.</p>
+      <pre>free -h</pre>
+    </section>
+
+    <section class="command-box">
+      <h2>5. Check Open Ports</h2>
+      <p>Shows listening ports.</p>
+      <pre>sudo ss -tulnp</pre>
+    </section>
+
+    <section class="command-box">
+      <h2>6. SSH to Server</h2>
+      <p>Connects to another server using SSH.</p>
+      <pre>ssh username@server_ip</pre>
+    </section>
+
+    <section class="command-box">
+      <h2>7. Check System Logs</h2>
+      <p>Shows system logs.</p>
+      <pre>journalctl -xe</pre>
+    </section>
+
+    <section class="command-box">
+      <h2>8. Check Firewall Status</h2>
+      <p>Checks Ubuntu firewall status.</p>
+      <pre>sudo ufw status</pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ubuntu Commands Learning Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
